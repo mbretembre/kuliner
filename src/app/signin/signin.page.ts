@@ -33,8 +33,8 @@ export class SigninPage {
           uid: res.user.uid,
         });
       }
-
       this.navCtrl.navigateRoot('/home');
+      location.reload();
     } catch (err) {
       console.dir(err);
       if (err.code === 'auth/wrong-password') {

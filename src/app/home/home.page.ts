@@ -31,9 +31,8 @@ export class HomePage implements OnInit {
     private router: Router,
     private afs: AngularFirestore,
     private alertCtrl: AlertController,
-    private gmap: GMapComponent
-  ) // public agmDir:AgmDirectionModule,
-  {}
+    private gmap: GMapComponent // public agmDir:AgmDirectionModule,
+  ) {}
 
   ngOnInit() {
     // this.afs.collection(`locations`).valueChanges().subscribe(res => {

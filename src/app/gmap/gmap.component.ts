@@ -57,14 +57,15 @@ export class GMapComponent implements OnInit {
     public navCtrl: NavController
   ) {}
 
-  async ngOnInit() {
+  ngOnInit() {
+    this.initMap();
+    this.setCurrentPosition();
+
     this.rld = this.shareIt.getBln();
     if (this.rld == true) {
       location.reload();
     }
     // await this.clct()
-    this.initMap();
-    this.setCurrentPosition();
     // this.updateUserLocation()
 
     this.afs
