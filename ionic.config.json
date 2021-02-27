@@ -1,0 +1,7 @@
+{
+  "name": "tembre",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
